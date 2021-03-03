@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<div class="togglingnav"></div>
+
+<div id="main">
+  <div id="header" class="topnav"></div>
+
+
+  <body id="body">
+    <div id="textcontent">
+
+      <div id="research">
+        <h1>research </h1>
+        <h2>ongoing</h2>
+        <p>a primary focus of the gomez lab is the complex biological 'signal processing' network of proteins known as the <a class="textlink" href="https://en.wikipedia.org/wiki/Kinome">Kinome</a>. i am currently working with <a class="textlink" href="https://www.bme.unc.edu/people/shawn-gomez/">professor shawn gomez</a> to investigate the construction, architecture, and applications of kinase interaction networks (kin) from a systems biology perspective</p>
+
+        <p>One example in progress is a 'kinome api' with connections to phenotype regression <a href="https://github.com/gomezlab/kinotypeClusteringAndRegression/" class="textlink">exploring the architecture of the kinome</a> spawning from work of recent unc graduate <a class="textlink" href="https://www.linkedin.com/in/kyla-a-l-collins">kyla a.l. collins</a></p>
+
+        <figure align="center" text-align="center" style="width:50%; min-width: 200px; margin-left: auto; margin-right: auto;">
+          <img src="images/kin_sample.png" alt="Sample Kinase Interaction Network" style="width:100%; min-width: 200px">
+          <figcaption style="display: block;">visualization of a(n outdated) kinase interaction network with 473 nodes (protein kinases) and ~3600 edges (protein-protein interactions) using the <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0098679" class="textlink">forceatlas2 algorithm</a> in javascript library <a href="http://sigmajs.org/" class="textlink"> sigma.js</a>. sizes are logarithmic of degree count for each node; colors represent candidate groupings</figcaption>
+        </figure>
+
+        <p>additional areas of ongoing research include applications of artificial intelligence in both single-cell rna-sequencing data and medical image analysis.</p>
+
+        <figure align="center" text-align="center" style="width:60%; min-width: 220px; margin-left: auto; margin-right: auto;">
+          <img src="images/anim_differentiation.gif" alt="Differentiation UMAP" style="width:100%; min-width: 220px">
+          <figcaption style="display: block;"><a href="https://github.com/lmcinnes/umap" class="textlink">umap dimensionality reduction</a> time lapse of mouse embryonic fibroblasts (mefs) differentiating into a variety of other cell types. [induced pluriplotent] stem cells (ipscs, in yellow) are a 'target' to diffferentiate into, although many mefs specialize into other cell types. data visualized are a subset of data collected by <a href="https://www.cell.com/cell/fulltext/S0092-8674(19)30039-X" class="textlink">schiebinger et al (2019)</a></figcaption>
+        </figure>
+
+        <br/>
+        <h2>past</h2>
+
+        <p>one of my first big self-driven data science projects was a capstone for <a class="textlink" href="https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t">Udacity's machine learning [engineer] nanodegree (mlnd)</a>. i decided to  <a href="https://github.com/eyes-robson/MLND" class="textlink">explore the machine-generated clusters of french geocode demographics</a> (a geocode similar to zipcode in the usa) to official government-created classifications of 'urban' and 'rural'</p>
+        <figure align="center" text-align="center" style="width:60%; min-width: 220px; margin-left: auto; margin-right: auto;">
+          <img src="images/french_geo_mlnd.png" alt="French Geocode Clustering" style="width:100%; min-width: 220px">
+          <figcaption style="display: block;">outputs of different <a href="https://scikit-learn.org/stable/" class="textlink">scikit-learn</a> clustering algorithms on multiple data preprocessing pipelines and cluster counts.</figcaption>
+        </figure>
+
+        <h2>presentations and whatnot</h2>
+        <p>colorful powerpoints spark joy in me. feel free to download a few of mine (and some other things, too) ~</p>
+
+        <p>from <a class="textlink" href="https://sites.google.com/cs.unc.edu/cmps790-158/home">comp790-158 spring 2020</a></p>
+        <ul> <p><b>current</b> special topics course in nlp at <a class="textlink" href="www.unc.edu">unc</a> with <a class="textlink" href="https://sites.google.com/site/snigdhac/">professor snigdha chaturvedi</a></p>
+          <li> hour presentation on <a class="textlink" href="documents/2020_01_17_chambers_jurafsky_2008.pptx" target="_blank">chambers and jurafsky (2008)</a></li>
+        </ul>
+
+
+        <p>from <a class="textlink" href="https://apexlab-duke.github.io/cs590-comparch-acc-fa2019/">ece590 fall 2019</a></p>
+        <ul> <p>a fantastic hardware acceleration course i took at <a class="textlink" href="www.duke.edu">duke university</a> with <a class="textlink" href="https://www.lisawuwills.com/">professor lisa wu wills</a></p>
+          <li>on <a class="textlink" href="documents/2019_09_18_roofline_ece590.pptx" target="_blank">roofline</a>, a powerful bottleneck analysis tool for scientific computing</li>
+          <li>on <a class="textlink" href="documents/2019_09_18_gables_ece590.pptx" target="_blank">gables</a>, a roofline model for mobile systems on chips</li>
+          <li>on <a class="textlink" href="documents/2019_10_30_tpu_ece590.pptx" target="_blank">the tpu (v1)</a>, the custom asic from google for machine learning</li>
+          <li>on <a class="textlink" href="documents/2019_11_4_darwin_ece590.pptx" target="_blank">darwin</a>, a long-read genomics accelerator</li>
+          <li>on <a class="textlink" href="documents/2019_11_20_mondrian_ece590.pptx" target="_blank">mondrian</a>, a relational database accelerator</li>
+        </ul>
+
+        <p>from bmme890 fall 2019</p>
+        <ul> <p>an innovative biomolecular engineering course at <a class="textlink" href="www.unc.edu">unc</a> with <a class="textlink" href="https://www.bme.unc.edu/people/koji-sode/">professor koji sode</a></p>
+          <li>on <a class="textlink" href="documents/2019_12_03_erbb2_pertuzumab_bmme890.pptx" target="_blank">protein language models</a>, a promising deep learning architecture, and use cases with <a class="textlink" href="https://www.genecards.org/cgi-bin/carddisp.pl?gene=ERBB2">erbb2 </a> and pertuzumab</li>
+        </ul>
+
+        <p>from comp776 fall 2018</p>
+        <ul> <p>a fascinating computer vision course at <a class="textlink" href="www.unc.edu">unc</a> with <a class="textlink" href="https://research.fb.com/people/berg-alexander-c/">professor alex c. berg</a></p>
+          <li>a very entertaining course report on an instance segmentation project <a class="textlink" href="documents/PotatoNet.pdf" target="_blank">PotatoNet</a> (yes, i manually labeled over 1000 potatoes)</li>
+        </ul>
+
+      </div>
+      <div float="center" id="doodleCanvas"></div>
+    </div>
+  </body>
+</div>
+
+<script>
+$(document).ready(function() {
+  $("#header").load("header.html");
+  $(".togglingnav").load("sidenav.html");
+  var src = "src.js";
+  $.getScript(src);
+});
+</script>
+
+</html>

@@ -1,0 +1,221 @@
+/*CSS file for the index page*/
+@media screen and (min-width: 200px) {
+  html{
+    font-size: calc(14px + (20-14) * ((100vw - 200px) / 3200));
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .visibledevice{
+    display: inline;
+  }
+  .visibledesktop{
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .visibledevice{
+    display: none;
+  }
+  .visibledesktop{
+    display: inline;
+  }
+}
+
+
+:root {
+  --header: #ffffff;
+  --main-h: #16161d;
+  --h1: #80fe90;
+  --main-bg: #ffffff; /*16161d*/
+  --font-color: #111119; /*a0feb0*/
+  --link-color: #002807;
+  --link-hover-color: #d1f1d1;
+  --header-font-size: 1.9em;
+  --h1-font-size: 1.5em;
+  --h2-font-size: 1.2em;
+  --main-font-size: 1em;
+  --main-font-padding: 0vh 0vw;
+  --side-nav-bg: #f0f0f0;
+  --header-width: 100%;
+  --shrink-header-width: 78%;
+  --text-width: 88%;
+  --shrink-text-width: 68%;
+  --hover-color: #d1f1d1;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+#header {
+  padding: 0vh 1vw 0vh 1vw;/* Some padding */
+  text-align: left; /* Centered text */
+  vertical-align: text-top;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0vh;
+  width: var(--header-width);
+  transition: .6s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  background-color: var(--header);
+  overflow: hidden;
+  display: inline-flex;
+  z-index: 2;
+  color: var(--main-h);
+  font-family: Roboto;
+  font-size: var(--header-font-size);
+  font-variant: none;
+  font-weight: lighter;
+  letter-spacing: .1vw;
+  margin-bottom: 0;
+}
+
+#deviceheader{
+  padding: 6vh 0vw 0vh 0vw;/* Some padding */
+  width: 100%;
+  border-bottom: solid;
+  border-color: var(--h1);
+  border-width: thick;
+  margin-bottom: 0vh;
+  margin-top: 0vh;
+  width: var(--text-width);
+}
+
+#main {
+  padding: 11vh 0vw 0vh 0vw;/* Some padding */
+  width: 100%;
+  transition: .6s;
+  position: absolute;
+}
+
+#body {
+  transition: 0.22s;
+  background-position: center;
+  opacity: 1.0;
+  z-index: -1;
+}
+
+#textcontent {
+  padding: 0vh 0vw 0vh 0vw;/* Some padding */
+  text-align: left;
+  font-size: var(--main-font-size);
+  z-index: 0;
+  width: var(--text-width);
+  left: 8vw;
+  position: sticky;
+  font-family: Roboto;
+  color: var(--font-color);
+  transition: .6s;
+  opacity: 1.0;
+}
+
+#name {
+  text-align: left;
+  transition: 0.22s;
+  text-decoration: none;
+  color: var(--main-h);
+  padding: var(--main-font-padding);
+  float: left;
+  margin-left: 1vw;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -225px;
+    visibility: hidden;
+}
+
+/* sidenav menu */
+.sidenav {
+  height: 100vh;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  left: 0;
+  background-color: var(--side-nav-bg);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 1vh; /* Place content 60px from the top */
+  transition: 0.6s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 1vh 1vw 1vh 3vw;
+  text-decoration: none;
+  font-size: var(--h1-font-size);
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: var(--hover-color);
+}
+
+/* sidenav button*/
+.hamburgerbutton {
+  cursor: pointer;
+  padding: 2vh 2vw 1vh 1vw;
+}
+
+.hamburgerbar1, .hamburgerbar2, .hamburgerbar3 {
+  width: 4vh;
+  height: 0.6vh;
+  background-color: #0f0f0f;
+  margin: 0.8vh 0;
+  transition: 0.4s;
+}
+
+/*Body text links*/
+.textlink {
+  text-decoration: none;
+  color: #0f0f0f;
+}
+
+.booklink {
+  text-decoration: none;
+  font-style: italic;
+  color: #002807;
+}
+
+.textlink:hover {
+  color: var(--hover-color);
+}
+
+.booklink:hover {
+  color: var(--hover-color);
+}
+
+/* desktop topnav setup */
+.topnav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+ul{
+
+}
+
+i {
+  float: right;
+  padding: 0.1em;
+  font-size: 0.8em;
+  margin-bottom: 0.2em;
+  color: black;
+  transition: 0.6s;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  color: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+.clearfix{
+    clear:both
+}
