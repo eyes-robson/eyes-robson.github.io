@@ -30,7 +30,6 @@ function scrollFunction() {
   }
 }
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function togglesidenav() {
   if(sidenav_open) {
     document.getElementById("sidenav").style.width = "0vw";
@@ -46,11 +45,30 @@ function togglesidenav() {
     sidenav_open = false;
   }
   else {
-    document.getElementById("sidenav").style.width = "18vw";
-    document.getElementById("header").style.marginLeft = "18vw";
-    document.getElementById("header").style.width = "var(--shrink-header-width)";
-    document.getElementById("textcontent").style.marginLeft = "26vw";
-    document.getElementById("textcontent").style.width = "var(--shrink-text-width)";
+
+    if(window.innerWidth > 480){
+      if(window.innerWidth > 700){
+        document.getElementById("sidenav").style.width = "18vw";
+        document.getElementById("header").style.marginLeft = "18vw";
+        document.getElementById("header").style.width = "var(--shrink-header-width-mid)";
+        document.getElementById("textcontent").style.marginLeft = "26vw";
+        document.getElementById("textcontent").style.width = "var(--shrink-text-width-mid)";
+      }
+      else {
+        document.getElementById("sidenav").style.width = "30vw";
+        document.getElementById("header").style.marginLeft = "30vw";
+        document.getElementById("header").style.width = "var(--shrink-header-width)";
+        document.getElementById("textcontent").style.marginLeft = "36vw";
+        document.getElementById("textcontent").style.width = "var(--shrink-text-width)";
+      }
+    }
+    else {
+      document.getElementById("sidenav").style.width = "40vw";
+      document.getElementById("header").style.marginLeft = "40vw";
+      document.getElementById("header").style.width = "var(--shrink-header-width-small)";
+      document.getElementById("textcontent").style.marginLeft = "44vw";
+      document.getElementById("textcontent").style.width = "var(--shrink-text-width-small)";
+    }
 
     for (var i = 0; i < headers.length; i++){
       headers[i].style.color= " 05a005"

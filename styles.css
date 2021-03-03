@@ -40,8 +40,12 @@
   --side-nav-bg: #f0f0f0;
   --header-width: 100%;
   --shrink-header-width: 78%;
+  --shrink-header-width-mid: 78%;
+  --shrink-header-width-small: 78%;
   --text-width: 88%;
   --shrink-text-width: 68%;
+  --shrink-text-width-mid: 68%;
+  --shrink-text-width-small: 68%;
   --hover-color: #d1f1d1;
 }
 
