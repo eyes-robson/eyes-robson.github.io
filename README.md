@@ -1,2 +1,2 @@
 # eyes-robson.github.io
-Personal Website for Eyes Robson
+personal website for eyes robson
